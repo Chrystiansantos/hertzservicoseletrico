@@ -1,4 +1,4 @@
-# Hertz serviços elétricos.
+# Hertz Serviços Elétricos.
 
 ## Objetivo
 O objetivo deste projeto consiste em um simples web site, para a divulgacao da empresa Hertz Serviços Elétricos
