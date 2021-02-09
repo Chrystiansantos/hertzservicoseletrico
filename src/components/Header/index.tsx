@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Logo, Nav } from './styles';
-import LogoImg from '../../assets/logoHertz.jpg';
+import LogoImg from '../../assets/logoHertz.jpeg';
 
 const Header: React.FC = () => {
   return (

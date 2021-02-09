@@ -31,6 +31,7 @@ export const Logo = styled(Link)`
 
   @media (max-width: 665px) {
     margin: 20px 0px;
+    text-align: center;
   }
 
   img {
@@ -53,7 +54,7 @@ export const Nav = styled.nav`
     padding-bottom: 30px;
     border-bottom: none;
     transition: 'border-bottom 4s linear';
-
+    white-space: nowrap;
     a {
       color: #212529;
       text-decoration: none;

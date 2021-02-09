@@ -1,9 +1,25 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import { ModalProvider } from 'react-simple-hook-modal';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Routes from './routes';
+import 'react-simple-hook-modal/dist/styles.css';
 
 // import { Container } from './styles';
 
 const App: React.FC = () => {
-  return <h1>Ola mundo</h1>;
+  return (
+    <>
+      <BrowserRouter>
+        <Header />
+        <ModalProvider>
+          <Routes />
+        </ModalProvider>
+      </BrowserRouter>
+      <Footer />
+    </>
+  );
 };
 
 export default App;

@@ -1,6 +1,5 @@
 import React from 'react';
 import { FaFacebookSquare, FaInstagram } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
 
 import { Container, Links, Contacts } from './styles';
 
@@ -10,22 +9,22 @@ const Footer: React.FC = () => {
       <Links>
         <ul>
           <li>
-            {/* <a
+            <a
               href="https://www.facebook.com/hertzservicoseletricos/"
               target="__blank"
-            > */}
-            <FaFacebookSquare />
-            <strong>Facebook</strong>
-            {/* </a> */}
+            >
+              <FaFacebookSquare />
+              <strong>Facebook</strong>
+            </a>
           </li>
           <li>
-            {/* <a
+            <a
               href="https://www.instagram.com/hertzserv.eletrico/?hl=pt-br"
               target="__blank"
-            > */}
-            <FaInstagram />
-            <strong>Instagram</strong>
-            {/* </a> */}
+            >
+              <FaInstagram />
+              <strong>Instagram</strong>
+            </a>
           </li>
         </ul>
       </Links>

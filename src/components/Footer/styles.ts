@@ -11,13 +11,6 @@ export const Links = styled.div`
     color: #eee;
     align-items: center;
     justify-content: center;
-
-    /* @media (max-width: 740px) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-    } */
   }
 
   li {
@@ -26,8 +19,13 @@ export const Links = styled.div`
     }
     list-style: none;
     font-size: 20px;
-    display: flex;
-    align-items: center;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
 
     svg {
       margin-right: 5px;

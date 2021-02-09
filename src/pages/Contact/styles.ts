@@ -1,5 +1,14 @@
 import styled from 'styled-components';
-import logo from '../../assets/jobs/logoHertz.jpg';
+import { Form } from '@unform/web';
+import { Modal as ModalLib } from 'react-simple-hook-modal';
+import logo from '../../assets/logoHertz.jpeg';
+
+interface IPropsModalContext {
+  contactSendSuccess: boolean;
+}
+interface IPropsFormContact {
+  disabledbutton: number;
+}
 
 export const Container = styled.div`
   background-color: #fff;
@@ -82,7 +91,7 @@ export const AddressHertz = styled.div`
   }
 `;
 
-export const FormContact = styled.form`
+export const FormContact = styled(Form)<IPropsFormContact>`
   margin-top: 30px;
   display: grid;
   justify-content: center;
@@ -90,33 +99,13 @@ export const FormContact = styled.form`
   h3 {
     text-align: center;
     margin-top: 25px;
-    margin-bottom: 45px;
+    margin-bottom: 35px;
     font-size: 30px;
-  }
-
-  div {
-    input {
-      text-align: center;
-      border: 1px solid #aaa;
-      border-radius: 4px;
-      height: 30px;
-    }
   }
 
   div + div {
     input {
       width: 100%;
-      margin-top: 10px;
-    }
-    textarea {
-      margin-top: 10px;
-      max-width: 392px;
-      width: 100%;
-      text-align: center;
-      border: 1px solid #aaa;
-      border-radius: 4px;
-      height: 60px;
-      font-size: 16px;
     }
   }
 
@@ -125,6 +114,8 @@ export const FormContact = styled.form`
     margin-top: 10px;
     background-color: #2c4d7f;
     color: #fff;
+    opacity: ${props => (props.disabledbutton ? 0.5 : 1)};
+    cursor: ${props => (props.disabledbutton ? 'not-allowed' : 'pointer')};
   }
 
   @media (max-width: 535px) {
@@ -136,5 +127,38 @@ export const FormContact = styled.form`
         width: 100%;
       }
     }
+  }
+`;
+
+export const Remetente = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  @media (max-width: 535px) {
+    margin-bottom: 0;
+  }
+`;
+
+export const Modal = styled(ModalLib)`
+  height: 400px;
+  background-color: red;
+`;
+
+export const ModalContext = styled.div<IPropsModalContext>`
+  margin-top: 100px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  h3 {
+    text-align: center;
+  }
+
+  button {
+    margin-top: 130px;
+    background-color: #2b4c7f;
+    background-color: ${props =>
+      props.contactSendSuccess ? '#2b4c7f' : '#ff3333'};
+    padding: 10px 0px;
+    color: #fff;
   }
 `;
