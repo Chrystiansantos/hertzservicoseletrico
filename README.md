@@ -1,8 +1,7 @@
 # Hertz Serviços Elétricos.
 
 ## Objetivo
-O objetivo deste projeto consiste em um simples web site, para a divulgacao da empresa Hertz Serviços Elétricos
-onde o cliente poderá ver alguns trabalhos, conhecer um pouco sobre a empresa encontrar informações de contato.
+O objetivo deste projeto consiste em um simples, web site, para a divulgação da empresa Hertz Serviços Elétricos onde o cliente poderá ver alguns trabalhos, conhecer um pouco sobre a mesma encontrar informações de contato.
 
 ## Demo:
 
@@ -16,13 +15,13 @@ Baixe o projeto, com o seguinte comando:
 git clone https://github.com/Chrystiansantos/hertzservicoseletrico
 ```
 
-Em seguida crie um projeto Firebase firebase.google.com, acesse a aba Realtime Database e conceda as permissoes de escritas como true.
+Em seguida crie um projeto Firebase firebase.google.com, acesse a aba Realtime Database e conceda as permissões de escritas como true.
 
 ```bat 
   write:true,
 ```
 ### Docker
-Preencha as credenciais conforme o informado pelo firebase no seguinte arquivo:
+Preencha as credenciais conforme o informado pelo Firebase no seguinte arquivo:
 
 ```bat 
   docker-compose.yml
@@ -36,7 +35,7 @@ docker-compose up
 ```
 ### Yarn
 
-Crie um arquivo chamado .env na raiz do projeto, copie as informacoes do arquivo .env.example para dentro do arquivo .env, e preencha as informacoes conforme fornecido pelo firebase.
+Crie um arquivo chamado .env na raiz do projeto, copie as informações do arquivo .env.example para dentro do arquivo .env, e preencha as informações conforme fornecido pelo Firebase.
 
 No terminal execute:  
 
@@ -46,6 +45,6 @@ yarn
 yarn start
 ```
 
-Para executar sua aplicação, voce irá abrir o navegador e acessar a seguinte url:
+Para executar sua aplicação, você irá abrir o navegador e acessar a seguinte url:
 
 http://localhost:3000/
