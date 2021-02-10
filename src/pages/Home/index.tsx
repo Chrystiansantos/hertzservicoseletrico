@@ -24,7 +24,6 @@ const Home: React.FC = () => (
           <div>
             <span />
           </div>
-          {/* <img src={imagem.imagem} alt="" /> */}
         </ImagesJob>
       ))}
     </GridImages>
